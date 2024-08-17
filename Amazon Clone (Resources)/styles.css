@@ -119,6 +119,86 @@ span{
     background-image: url("hero_image.jpg");
     background-size: cover;
     height: 600px;
+    display: flex;
     justify-content: center;
+    align-items: flex-end;
 
+
+}
+
+.hero-msg{
+    background-color: white;
+    color:black;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+
+
+}
+
+.hero-msg a{
+    color:rgb(9, 226, 154)
+    
+}
+
+
+/*
+here the box is used in the class of all divs
+*/
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    flex: 1;
+    min-width: 200px;
+    max-width: calc(33.333% - 20px);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.box-content {
+    padding: 10px;
+    text-align: center;
+}
+
+.box-img {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.box h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 16px;
+    color: #007185;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.box p:hover {
+    text-decoration: none;
 }
